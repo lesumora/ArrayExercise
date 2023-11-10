@@ -26,7 +26,7 @@ public class Main {
             container[i] = word;
         }
 
-        for (int i = 0; i < size; i++) {
+        for (int i = 0; i < container.length; i++) {
             int evenOrOdd, wordLength = container[i].length();
             System.out.println("\nString " + (i+1) + " = " + container[i]);
             if(wordLength > 5){
@@ -38,7 +38,7 @@ public class Main {
                         "\nWill now print EVEN index/indices of the array:");
                 evenOrOdd = 0;
             }
-            for (int j = evenOrOdd; j < size; j+=2) {
+            for (int j = evenOrOdd; j < container.length; j+=2) {
                 System.out.println("Index " + j + " : " + container[j]);
             }
         }
